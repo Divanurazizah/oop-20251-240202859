@@ -1,16 +1,19 @@
 # Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+Topik: [Setup Lingkungan & Hello POS (Procedural, Functional, OOP)]
 
 ## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
+- Nama  : [Diva Nur Azizah]
+- NIM   : [240202859]
+- Kelas : [3IKRA]
 
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+(Tuliskan tujuan praktikum minggu ini. 
+Mahasiswa dapat melakukan setup lingkungan pemrograman Java.
+Mahasiswa memahami perbedaan pendekatan procedural, functional, dan object-oriented programming (OOP).
+Mahasiswa dapat membuat program sederhana “Hello World, I am [Nama]-[NIM]” dengan ketiga pendekatan.
+.*)
 
 ---
 
