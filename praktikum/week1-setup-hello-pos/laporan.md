@@ -19,10 +19,9 @@ Topik: Pengenalan Paradigma dan Setup Proyek
 1. Pemrograman Prosedural: Menyelesaikan masalah dengan langkah-langkah terurut dari atas ke bawah, menggunakan variabel dan perintah secara langsung.
 2. Pemrograman OOP (Object-Oriented Programming): Memodelkan masalah dengan class dan object. Class adalah blueprint yang memiliki atribut (data) dan method (perilaku).
 3. Pemrograman Fungsional: Menekankan penggunaan fungsi murni dan lambda expression untuk membuat kode singkat, reusable, dan mudah di-parallel-kan.
-4. Perbandingan:
-   - Prosedural → sederhana, cocok untuk program kecil.
-   - OOP → terstruktur, cocok untuk program kompleks.
-   - Fungsional → deklaratif, cocok untuk operasi data intensif.
+- Prosedural → sederhana, cocok untuk program kecil.
+- OOP → terstruktur, cocok untuk program kompleks.
+- Fungsional → deklaratif, cocok untuk operasi data intensif.
 
 ---
 
