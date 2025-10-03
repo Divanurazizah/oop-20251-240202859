@@ -28,21 +28,47 @@ Topik: Pengenalan Paradigma dan Setup Proyek
 
 ## Langkah Praktikum
 
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+1. Menyiapkan Java JDK serta editor (misalnya VS Code).  
+2. Membuat tiga file terpisah: HelloProsedural.java, HelloOOP.java, HelloFunctional.java.  
+3. Menulis kode sesuai paradigma yang dipilih.
+4. Melakukan kompilasi dengan javac, lalu menjalankan program dengan java.
+5. Menyimpan hasil output untuk dokumentasi.
 
 ---
 
 ## Kode Program
-(Tuliskan kode utama yang dibuat, contoh:  
-
-```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
+  
 ```
-)
+public class HelloProcedural {
+    public static void main(String[] args) {
+        // Paradigma prosedural: langsung instruksi urut
+        String nama = "Diva Nur Azizah";
+        String nim = "240202859";
+        System.out.println("Hello World, I am " + nama + "-" + nim);
+    }
+}
+
+```
+class Person {
+    private String name;
+    private String nim;
+
+    public Person(String name, String nim) {
+        this.name = name;
+        this.nim = nim;
+    }
+
+    public void sayHello() {
+        System.out.println("Hello World, I am " + name + "-" + nim);
+    }
+}
+
+public class HelloOOP {
+    public static void main(String[] args) {
+        Person me = new Person("Diva Nur Azizah", "240202859");
+        me.sayHello();
+    }
+}
 ---
 
 ## Hasil Eksekusi
