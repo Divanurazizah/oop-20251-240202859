@@ -118,21 +118,24 @@ public class HelloFunctional {
 ---
 
 ## Quiz
-(1. Apakah OOP selalu lebih baik dari prosedural?  
-   **Jawaban:** Tidak selalu. OOP lebih baik untuk aplikasi yang besar, kompleks, dan butuh struktur jelas (misalnya aplikasi dengan banyak fitur). Tetapi untuk program kecil atau skrip sederhana, prosedural bisa lebih cepat dan mudah tanpa harus membuat class dan object.
+1. Apakah OOP selalu lebih baik dari prosedural?  
+   **Jawaban:**
+   Tidak selalu. OOP lebih baik untuk aplikasi yang besar, kompleks, dan butuh struktur jelas (misalnya aplikasi dengan banyak fitur). Tetapi untuk program kecil atau skrip sederhana, prosedural bisa lebih cepat dan mudah tanpa harus membuat class dan object.
 
-2. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural? 
-   **Jawaban:** Functional programming lebih cocok untuk kasus yang membutuhkan perhitungan matematis, data processing, manipulasi data dalam jumlah besar, atau parallel computing. Karena sifat fungsi murni (pure function) membuat program lebih mudah diuji, diprediksi, dan dijalankan secara paralel tanpa efek samping.
+3. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural? 
+   **Jawaban:**
+    Functional programming lebih cocok untuk kasus yang membutuhkan perhitungan matematis, data processing, manipulasi data dalam jumlah besar, atau parallel computing. Karena sifat fungsi murni (pure function) membuat program lebih mudah diuji, diprediksi, dan dijalankan secara paralel tanpa efek samping.
 
-3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
-    **Jawaban:** Prosedural: mudah dipahami untuk program kecil, tetapi sulit di-maintain jika aplikasi makin besar karena kode bercampur dan tidak terstruktur.
-
-OOP: lebih mudah di-maintain dan scalable karena data dan perilaku terorganisir dalam class dan object. Cocok untuk aplikasi jangka panjang.
-
-Fungsional: mengurangi kompleksitas dengan fungsi murni, memudahkan debugging, serta lebih aman untuk aplikasi besar yang butuh performa tinggi atau paralelisasi.
+4. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
+    **Jawaban:**
+    Prosedural: mudah dipahami untuk program kecil, tetapi sulit di-maintain jika aplikasi makin besar karena kode bercampur dan tidak terstruktur.
+   OOP: lebih mudah di-maintain dan scalable karena data dan perilaku terorganisir dalam class dan object. Cocok untuk aplikasi jangka panjang.
+   Fungsional: mengurangi kompleksitas dengan fungsi murni, memudahkan debugging, serta lebih aman untuk aplikasi besar yang butuh performa tinggi atau paralelisasi.
    
 4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
-   **Jawaban:** Karena aplikasi POS (Point of Sale) biasanya punya banyak entitas (Produk, Transaksi, Kasir, Pelanggan). Dengan OOP, setiap entitas bisa dibuat sebagai class sehingga lebih mudah dikembangkan, diperluas, dan di-maintain. Kalau pakai prosedural, data dan logika bercampur sehingga sulit dikelola kalau fitur bertambah.
+   **Jawaban:**
+    Karena aplikasi POS (Point of Sale) biasanya punya banyak entitas (Produk, Transaksi, Kasir, Pelanggan). Dengan OOP, setiap entitas bisa dibuat sebagai class sehingga lebih mudah dikembangkan, diperluas, dan di-maintain. Kalau pakai prosedural, data dan logika bercampur sehingga sulit dikelola kalau fitur bertambah.
    
-5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?
-   **Jawaban:** Functional programming mendorong penggunaan fungsi murni, higher-order function, dan immutability. Dengan itu, kita bisa menulis fungsi sekali lalu dipakai ulang tanpa perlu banyak kode tambahan. Misalnya, operasi seperti map(), filter(), atau reduce() bisa menggantikan looping manual berulang-ulang, sehingga kode jadi lebih singkat, jelas, dan bebas dari boilerplate. )
+6. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?
+   **Jawaban:**
+    Functional programming mendorong penggunaan fungsi murni, higher-order function, dan immutability. Dengan itu, kita bisa menulis fungsi sekali lalu dipakai ulang tanpa perlu banyak kode tambahan. Misalnya, operasi seperti map(), filter(), atau reduce() bisa menggantikan looping manual berulang-ulang, sehingga kode jadi lebih singkat, jelas, dan bebas dari boilerplate. 
