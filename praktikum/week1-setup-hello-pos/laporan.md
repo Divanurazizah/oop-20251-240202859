@@ -90,9 +90,11 @@ public class HelloFunctional {
 ---
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
-)
+
+1. Procedural <img width="1111" height="681" alt="Screenshot 2025-10-03 105229" src="https://github.com/user-attachments/assets/9223318b-6ca9-4fb6-8338-51485539fdb8" />
+2. OOP <img width="1061" height="618" alt="Screenshot 2025-10-03 105331" src="https://github.com/user-attachments/assets/8e2ec7d6-9611-47cb-952c-dbfeae791d5c" />
+3. Functional <img width="1054" height="608" alt="Screenshot 2025-10-03 105416" src="https://github.com/user-attachments/assets/92dae2c2-dd0e-409e-90e3-00b6acbfc3ff" />
+
 ---
 
 ## Analisis
