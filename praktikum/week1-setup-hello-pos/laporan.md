@@ -102,25 +102,15 @@ public class HelloFunctional {
 - Pada OOP, struktur program lebih jelas. Data (nama, nim) dan perilaku (tampilkan()) dibungkus dalam satu class. 
 - Pada fungsional, pendekatan lebih ringkas. Dengan lambda, tidak perlu membuat class tambahan, cukup mendefinisikan fungsi singkat.
 - Ketiganya menghasilkan output sama, namun pola penulisan berbeda.
-- Perbandingan Paradigma:
-  
-  *Prosedural
-  Kelebihan:Mudah dibuat, cocok untuk program kecil.
-  Kekurangan:Susah diatur kalau program besar.
-  *OOP
-  Kelebihan:Lebih terstruktur, gampang dikembangkan.
-  Kekurangan:Kodenya lebih panjang, agak ribet di awal.
-  *Fungsional
-  Kelebihan:Ringkas, lebih mudah untuk olah data, minim bug.
-  Kekuangan:Kurang familiar, tidak semua kasus cocok.
+- 
 ---
 
 ## Kesimpulan
 
-- Paradigma berbeda menawarkan kelebihan masing-masing:
--Prosedural cocok untuk program kecil.
--OOP sesuai untuk aplikasi yang butuh pengelolaan data lebih kompleks.
--Fungsional lebih ringkas dan praktis untuk operasi data.
+Paradigma berbeda menawarkan kelebihan dan kekurangan masing-masing:
+- Prosedural cocok untuk program kecil, tetapi tidak efisien untuk program berskala besar.
+- OOP sesuai untuk aplikasi yang butuh pengelolaan data lebih kompleks karena lebih terstruktur, namun kodenya lebih panjang dan agak lebih kompleks di awal.
+- Fungsional lebih ringkas dan praktis untuk operasi data, tetapi kurang familiar dan tidak semua kasus cocok.
 - Pemilihan paradigma harus menyesuaikan dengan konteks aplikasi dan kebutuhan pengembangan.
   
 
