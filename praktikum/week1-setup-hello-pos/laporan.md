@@ -1,5 +1,5 @@
 # Laporan Praktikum Minggu 1
-Topik: [Setup Lingkungan & Hello POS (Procedural, Functional, OOP)]
+Topik: Pengenalan Paradigma dan Setup Proyek
 
 ## Identitas
 - Nama  : Diva Nur Azizah
@@ -15,17 +15,19 @@ Topik: [Setup Lingkungan & Hello POS (Procedural, Functional, OOP)]
 
 ---
 
-## Dasar Teori
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+## Dasar Teori  
+1. Pemrograman Prosedural: Menyelesaikan masalah dengan langkah-langkah terurut dari atas ke bawah, menggunakan variabel dan perintah secara langsung.
+2. Pemrograman OOP (Object-Oriented Programming): Memodelkan masalah dengan class dan object. Class adalah blueprint yang memiliki atribut (data) dan method (perilaku).
+3. Pemrograman Fungsional: Menekankan penggunaan fungsi murni dan lambda expression untuk membuat kode singkat, reusable, dan mudah di-parallel-kan.
+4. Perbandingan:
+   - Prosedural → sederhana, cocok untuk program kecil.
+   - OOP → terstruktur, cocok untuk program kompleks.
+   - Fungsional → deklaratif, cocok untuk operasi data intensif.
 
 ---
 
 ## Langkah Praktikum
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
+
 1. Langkah-langkah yang dilakukan (setup, coding, run).  
 2. File/kode yang dibuat.  
 3. Commit message yang digunakan.)
