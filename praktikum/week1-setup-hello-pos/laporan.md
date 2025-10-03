@@ -111,7 +111,7 @@ public class HelloFunctional {
   Kelebihan:Lebih terstruktur, gampang dikembangkan.
   Kekurangan:Kodenya lebih panjang, agak ribet di awal.
   *Fungsional
-  Kelebihan:Ringkas, enak untuk olah data, minim bug.
+  Kelebihan:Ringkas, lebih mudah untuk olah data, minim bug.
   Kekuangan:Kurang familiar, tidak semua kasus cocok.
 ---
 
