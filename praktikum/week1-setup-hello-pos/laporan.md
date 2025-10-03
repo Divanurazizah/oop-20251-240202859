@@ -9,9 +9,9 @@ Topik: [Setup Lingkungan & Hello POS (Procedural, Functional, OOP)]
 ---
 
 ## Tujuan
-Mahasiswa mampu mendefinisikan paradigma prosedural, OOP, dan fungsional.
-Mahasiswa mampu membandingkan kelebihan dan keterbatasan tiap paradigma.
-Mahasiswa dapat membuat program sederhana “Hello World, I am [Nama]-[NIM]” dengan ketiga pendekatan.
+- Mahasiswa mampu mendefinisikan paradigma prosedural, OOP, dan fungsional.
+- Mahasiswa mampu membandingkan kelebihan dan keterbatasan tiap paradigma.
+- Mahasiswa dapat membuat program sederhana “Hello World, I am [Nama]-[NIM]” dengan ketiga pendekatan.
 
 ---
 
