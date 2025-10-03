@@ -49,6 +49,7 @@ public class HelloProcedural {
 }
 
 ```
+
 ```
 class Person {
     private String name;
@@ -70,6 +71,8 @@ public class HelloOOP {
         me.sayHello();
     }
 }
+```
+
 ```
 import java.util.function.BiConsumer;
 
