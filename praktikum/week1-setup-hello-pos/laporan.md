@@ -2,18 +2,16 @@
 Topik: [Setup Lingkungan & Hello POS (Procedural, Functional, OOP)]
 
 ## Identitas
-- Nama  : [Diva Nur Azizah]
-- NIM   : [240202859]
-- Kelas : [3IKRA]
+- Nama  : Diva Nur Azizah
+- NIM   : 240202859
+- Kelas : 3IKRA
 
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini. 
-Mahasiswa dapat melakukan setup lingkungan pemrograman Java.
-Mahasiswa memahami perbedaan pendekatan procedural, functional, dan object-oriented programming (OOP).
+Mahasiswa mampu mendefinisikan paradigma prosedural, OOP, dan fungsional.
+Mahasiswa mampu membandingkan kelebihan dan keterbatasan tiap paradigma.
 Mahasiswa dapat membuat program sederhana “Hello World, I am [Nama]-[NIM]” dengan ketiga pendekatan.
-.*)
 
 ---
 
