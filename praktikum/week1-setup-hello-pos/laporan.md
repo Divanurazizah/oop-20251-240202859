@@ -101,7 +101,6 @@ public class HelloFunctional {
 - Pada prosedural, kode sederhana dan langsung dijalankan, namun tidak fleksibel bila program semakin kompleks.
 - Pada OOP, struktur program lebih jelas. Data (nama, nim) dan perilaku (tampilkan()) dibungkus dalam satu class. 
 - Pada fungsional, pendekatan lebih ringkas. Dengan lambda, tidak perlu membuat class tambahan, cukup mendefinisikan fungsi singkat.
-- Ketiganya menghasilkan output sama, namun pola penulisan berbeda.
 - Dari ketiga paradigma, perbedaan utama ada pada cara menulis dan mengorganisir kode, meskipun output program tetap sama
   
 ---
