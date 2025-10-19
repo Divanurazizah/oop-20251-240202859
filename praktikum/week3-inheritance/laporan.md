@@ -157,6 +157,7 @@ public class AlatPertanian extends Produk {
         System.out.println("Keterangan: Alat pertanian ini terbuat dari material kuat dan tahan lama.");
     }
 }
+```
 
 ### 5. CreditBy.java
 ```java
@@ -194,11 +195,10 @@ public class MainInheritance {
         CreditBy.print("<240202859>", "<Diva Nur Azizah>");
     }
 }
-
 ---
 
 ## Hasil Eksekusi
-(c:\Users\nuraz\Pictures\Screenshots\Screenshot (265).png)
+![alt text](<Screenshot (265).png>)
 ---
 
 ## Analisis
