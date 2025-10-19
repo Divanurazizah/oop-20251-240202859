@@ -198,11 +198,10 @@ public class MainInheritance {
 ---
 
 ## Hasil Eksekusi
-![alt text](<Screenshot (265).png>)
+![alt text](image.png)
 ---
 
 ## Analisis
-(
 - Pada proses pengerjaan tugas minggu ini, saya menerapkan konsep inheritance (pewarisan) di Java untuk menghubungkan class Produk sebagai superclass dengan subclass Benih, Pupuk, dan AlatPertanian.
 - Awalnya saya mengalami kendala pada struktur package, karena folder belum sesuai urutan src/main/java/com/upb/agripos/..., sehingga file tidak dikenali sistem.
    - Solusi: menyesuaikan struktur folder agar sesuai dengan package pada baris package com.upb.agripos.model; dan package com.upb.agripos.util;. Setelah disusun benar, error hilang dan program bisa dijalankan.
@@ -215,19 +214,19 @@ public class MainInheritance {
 - Pada class MainInheritance, objek dari setiap subclass dipanggil dan dipisahkan dengan System.out.println(); agar output antar produk tidak menempel.
 - Ditambahkan juga class CreditBy di package util untuk menampilkan identitas pembuat program.
 - Perbedaan pendekatan minggu ini dibanding minggu sebelumnya yaitu minggu sebelumnya menggunakan class tunggal tanpa inheritance, semua atribut ditulis berulang di setiap class. Sedangkan minggu ini menggunakan pewarisan (inheritance) sehingga kode menjadi lebih efisien, rapi, dan mudah dikembangkan. 
-)
+
 ---
 
 ## Kesimpulan
-(Dari praktikum minggu ini dapat disimpulkan bahwa penggunaan inheritance membuat program lebih terstruktur, efisien, dan mudah dikembangkan.
+Dari praktikum minggu ini dapat disimpulkan bahwa penggunaan inheritance membuat program lebih terstruktur, efisien, dan mudah dikembangkan.
 Superclass Produk mampu menampung atribut serta method umum yang kemudian diwariskan ke subclass (Benih, Pupuk, AlatPertanian).
 Dengan cara ini, duplikasi kode dapat dihindari, dan setiap subclass hanya fokus pada atribut atau perilaku khusus miliknya.
-Selain itu, penataan package yang benar sangat penting agar program dapat dijalankan tanpa error.)
+Selain itu, penataan package yang benar sangat penting agar program dapat dijalankan tanpa error.
 
 ---
 
 ## Quiz
-(1. [Apa keuntungan menggunakan inheritance dibanding membuat class terpisah tanpa hubungan?]  
+1. [Apa keuntungan menggunakan inheritance dibanding membuat class terpisah tanpa hubungan?]  
    **Jawaban:** Keuntungan menggunakan inheritance adalah kode menjadi lebih efisien dan terstruktur, karena atribut dan method umum cukup ditulis satu kali di superclass. Semua subclass bisa langsung mewarisi tanpa perlu menulis ulang. Hal ini juga memudahkan perawatan program — jika ada perubahan pada bagian umum, cukup diubah di superclass saja dan otomatis berlaku di semua subclass. 
 
 2. [Bagaimana cara subclass memanggil konstruktor superclass? ]  
@@ -245,4 +244,4 @@ File lain seperti Pupuk.java dan AlatPertanian.java juga punya bagian serupa, tu
     - ObatTanaman → atribut tambahan fungsi dan tanggalKedaluwarsa.
     - BibitBuah → atribut jenisBuah dan lamaPanen.
 Semua contoh tersebut masih berhubungan dengan Produk Pertanian dan dapat mewarisi atribut dasar dari Produk.
-)
+
