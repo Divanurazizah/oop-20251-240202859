@@ -195,11 +195,14 @@ public class MainInheritance {
         CreditBy.print("<240202859>", "<Diva Nur Azizah>");
     }
 }
+```
 ---
+
 
 ## Hasil Eksekusi
 ![alt text](image.png)
 ---
+
 
 ## Analisis
 - Pada proses pengerjaan tugas minggu ini, saya menerapkan konsep inheritance (pewarisan) di Java untuk menghubungkan class Produk sebagai superclass dengan subclass Benih, Pupuk, dan AlatPertanian.
@@ -232,6 +235,7 @@ Selain itu, penataan package yang benar sangat penting agar program dapat dijala
 2. [Bagaimana cara subclass memanggil konstruktor superclass? ]  
    **Jawaban:** Subclass memanggil konstruktor superclass dengan menggunakan kata kunci super() di dalam konstruktor milik subclass.
 Contoh:
+
 public Benih(String kode, String nama, double harga, int stok, String varietas) {
         super(kode, nama, harga, stok);
         this.varietas = varietas;
