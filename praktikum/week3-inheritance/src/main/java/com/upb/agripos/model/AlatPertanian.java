@@ -17,5 +17,4 @@ public class AlatPertanian extends Produk {
         System.out.println("Material: " + material);
         System.out.println("Keterangan: Alat pertanian ini terbuat dari material kuat dan tahan lama.");
     }
-
 }

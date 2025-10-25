@@ -1,4 +1,4 @@
-package com.upb.agripos.model;
+ package com.upb.agripos.model;
 
 public class Pupuk extends Produk {
     private String jenis;
