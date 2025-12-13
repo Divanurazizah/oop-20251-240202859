@@ -23,7 +23,6 @@ Sistem Agri-POS (Agricultural Point of Sale) adalah aplikasi Point of Sale (POS)
 Sistem ini mendukung dua peran utama:
 1. Kasir: Bertanggung jawab atas proses transaksi penjualan, mulai dari pemilihan produk hingga penyelesaian pembayaran dan pencetakan struk.
 2. Admin: Bertanggung jawab atas manajemen produk (tambah, ubah, hapus, tampil) dan melihat laporan penjualan harian/periodik.
-
 Desain arsitektur Agri-POS berfokus pada Maintainability dan Extensibility dengan menerapkan prinsip SOLID, terutama untuk mendukung penambahan metode pembayaran baru di masa depan tanpa memodifikasi modul inti.
 ---
 
