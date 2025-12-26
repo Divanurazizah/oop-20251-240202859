@@ -27,12 +27,12 @@ Desain arsitektur Agri-POS berfokus pada Maintainability dan Extensibility denga
 ---
 
 ## Penjelasan Diagram UML
-1. Use Case Diagram
+## 1. Use Case Diagram
 Diagram ini mengidentifikasi dua aktor utama: Kasir dan Admin, dan memetakan fungsionalitas sistem.
 - Aktor Kasir: Melakukan Login System, Proses Checkout, Bayar, dan Cetak Struk.
 - Aktor Admin: Melakukan Login System, Kelola Produk (mencakup CRUD), dan Lihat Laporan.
 
-2. Sequence Diagram
+## 2. Sequence Diagram
 Diagram ini memvisualisasikan interaksi antar objek (lifeline) selama proses transaksi hingga pembayaran selesai. Objek layanan utama adalah Sistem Transaksi, Sistem Produk, dan Sistem Pembayaran.
 - Awal Transaksi: Kasir memulai dengan buatTransaksiBaru(), lalu memanggil tambahProduk() yang memicu cekStok() di Sistem Produk.
 - Proses Pembayaran (Split alt):
@@ -41,12 +41,12 @@ Diagram ini memvisualisasikan interaksi antar objek (lifeline) selama proses tra
    - Error Handling (alt E-Wallet): Terdapat fragment alt untuk skenario Cukup (auth dan capture berhasil) dan Tidak Cukup (saldoTidakCukup dikembalikan oleh Payment Gateway yang memicu error dari Sistem Pembayaran).
 - Penyelesaian: Setelah pembayaran berhasil, Sistem Transaksi menerima notifikasi pembayaranSelesai(), memicu pembuatan struk.
 
-3. Class Diagram
+## 3. Class Diagram
 Diagram ini memvisualisasikan struktur kelas dengan fokus pada abstraksi pembayaran untuk memenuhi SOLID.
 - Kelas Layanan Utama (SRP): LayananProduk, LayananTransaksi, dan LayananPembayaran.
 - Pola OCP/DIP: Kelas LayananPembayaran bergantung pada Interface IMetodePembayaran. Implementasi konkret seperti PembayaranTunai dan PembayaranEWallet mengimplementasikan interface ini. Ini memisahkan business logic dari detail implementasi.
 
-4. Activity Diagram
+## 4. Activity Diagram
 Diagram ini menggambarkan alur kerja di antara swimlane Kasir dan Sistem. Alur utama meliputi Validasi Stok, Hitung Total, dan Pemilihan Metode Pembayaran. Diagram secara eksplisit menangani dua skenario:
 - Gagal Stok: Sistem akan meminta Kasir Hapus item stok habis.
 - Gagal Bayar E-Wallet: Sistem mengarahkan kembali Kasir untuk Pilih metode lain.
@@ -79,6 +79,7 @@ Diagram ini menggambarkan alur kerja di antara swimlane Kasir dan Sistem. Alur u
 ## Kesimpulan
 
 Sistem Agri-POS berhasil dirancang sebagai solusi POS yang modular, ekstensibel, dan maintainable. Dengan mengadopsi empat diagram UML dan prinsip SOLID (terutama OCP/DIP pada modul pembayaran), sistem ini mampu memenuhi semua kebutuhan fungsional dasar, termasuk manajemen produk, transaksi penjualan, berbagai metode pembayaran, dan hak akses yang berbeda.
+
 ---
 
 ## Quiz
