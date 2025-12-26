@@ -110,6 +110,8 @@ public class ShoppingCart {
     }
 } 
 
+````
+
 ### ShoppingCartMap.java
 ```java
 package main.java.com.upb.agripos;
@@ -154,6 +156,7 @@ public class ShoppingCartMap {
         System.out.println("Total: " + hitungTotal());
     }
 }
+```
 
 ### MainCart.java
 ```java
