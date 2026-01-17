@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "praktikum/week11-dao-database/src/main/java"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "praktikum/week10-pattern-testing/lib/junit-platform-console-standalone-1.10.2 (1).jar",
+        "c:\\Users\\nuraz\\Downloads\\postgresql-42.7.9.jar"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.debug.settings.onBuildFailureProceed": true
+}
