@@ -57,27 +57,33 @@ C. Sequence Diagram: Checkout Transaksi
 ---
 
 ## Test Plan & Test Case
-A. Unit Test (JUnit)
+Unit Test (JUnit)
 Kami melakukan pengujian pada logika perhitungan total di CartService.
 - Method: calculateTotal()
 - Result: PASSED (Screenshot terlampir di folder /screenshots)
 
-B. Test Case Manual
-ID,Fitur,Langkah,Hasil yang Diharapkan,Status
-TC-01,Login,Input username admin/admin,Masuk ke dashboard Admin,Pass
-TC-02,CRUD,Tambah produk stok 0,Muncul pesan error validasi,Pass
-TC-03,Transaksi,"Klik ""Bayar"" tanpa item",Tombol disable atau muncul peringatan,Pass
-TC-04,Stok,Checkout 5 barang,Stok di database berkurang 5,Pass
+### Test Case Manual
+
+| ID    | Fitur       | Langkah                                  | Hasil yang Diharapkan                     |
+|-------|-------------|-------------------------------------------|-------------------------------------------|
+| TC-01 | Login       | Input username `admin` / `admin`          | Masuk ke dashboard Admin                  |
+| TC-02 | CRUD        | Tambah produk stok 0                      | Muncul pesan error validasi               |
+| TC-03 | Transaksi   | Klik **Bayar** tanpa item                 | Tombol disable atau muncul peringatan     |
+| TC-04 | Stok        | Checkout 5 barang                         | Stok di database berkurang 5              |
+
 ---
 
-## Traceability Matrix
-Artefak,Referensi,Implementasi (Kelas/Metode),Bukti
-FR-1,Manajemen Produk,"ProductService.save(), ProductDAO.findAll()",Screenshot CRUD Produk
-FR-2,Transaksi,"CartService.addItem(), TransactionService",Screenshot Tabel Keranjang
-FR-3,Pembayaran,Interface PaymentStrategy (OCP),Pilihan Dropdown Tunai/E-Wallet
-FR-4,Struk,ReceiptGenerator.printText(),Output Console/UI Struk
-FR-5,Login/Role,"AuthService.authenticate(), SessionManager",Menu berbeda untuk Admin/Kasir
-OFR-2,Diskon (Opt),DiscountService.applyVoucher(),Total harga berkurang otomatis
+### Traceability Matrix
+
+| Artefak | Referensi | Implementasi (Kelas/Metode) |
+|--------|-----------|-----------------------------|
+| FR-1  | Manajemen Produk | `ProductService.save()` / `ProductDAO.findAll()` |
+| FR-2  | Transaksi | `CartService.addItem()` / `TransactionService` |
+| FR-3  | Pembayaran | `PaymentStrategy (OCP)` |
+| FR-4  | Struk | `ReceiptGenerator.printText()` |
+| FR-5  | Login/Role | `AuthService.authenticate()` / `SessionManager` |
+| OFR-2 | Diskon (Opsional) | `DiscountService.applyVoucher()` |
+
 ---
 
 ## Pembagian Kerja
@@ -100,6 +106,7 @@ Kontribusi: Implementasi CRUD pada JdbcProductDAO, ProductService, dan desain sk
 Hanifah (240202864)
 Peran: Reporting & Testing Specialist.
 Kontribusi: Implementasi ReportService, Receipt (Struk), Strategy Pattern pada PaymentMethod, serta penyusunan Unit Testing.
+
 ---
 
 ## Kendala & Solusi
