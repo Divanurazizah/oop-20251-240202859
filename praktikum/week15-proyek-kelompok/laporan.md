@@ -1,16 +1,21 @@
 # Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+Topik: Bab 15 – Proyek Kelompok (Desain Sistem + Implementasi Terintegrasi + Testing + Dokumentasi)
 
 ## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
+- Nama  : Diva Nur Azizah
+- NIM   : 240202859
+- Kelas : 3IKRA
 
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+Setelah mengikuti proyek ini, mahasiswa mampu:
+
+1. Berkolaborasi dalam tim untuk membangun aplikasi terintegrasi.
+2. Mendesain sistem secara lengkap menggunakan UML (Use Case, Class, Sequence).
+3. Mengimplementasikan sistem sesuai desain dengan arsitektur yang rapi (SOLID + DIP).
+4. Menyusun dokumentasi teknis dan laporan proyek yang lengkap.
+5. Menyusun test plan dan test case, serta menjalankan unit/integration test dasar.
 
 ---
 
