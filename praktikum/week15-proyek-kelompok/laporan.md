@@ -20,59 +20,94 @@ Setelah mengikuti proyek ini, mahasiswa mampu:
 ---
 
 ## Dasar Teori
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+Agri-POS adalah sistem kasir terintegrasi yang dirancang khusus untuk toko pertanian. Sistem ini mengelola inventaris produk, memproses transaksi penjualan dengan berbagai metode pembayaran, dan menyediakan laporan penjualan harian untuk admin.
+Fitur Utama:
+- Manajemen Inventaris (CRUD Produk).
+- Sistem Penjualan (Cart & Checkout).
+- Multi-Payment (Cash & E-Wallet) menggunakan Strategy Pattern.
+- Manajemen Hak Akses (Admin & Kasir).
+- Laporan Penjualan & Cetak Struk.
 
 ---
 
-## Langkah Praktikum
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+## Desain Sistem & Arsitektur
+Sistem dibangun menggunakan Arsitektur Layered untuk memisahkan tanggung jawab (Separation of Concerns):
+1. View (JavaFX): Menangani tampilan .fxml dan komponen UI.
+2. Controller: Jembatan antara UI dan logika bisnis.
+3. Service Layer: Berisi logika bisnis (validasi, perhitungan pajak/diskon). Di sini prinsip DIP (Dependency Inversion) diterapkan.
+4. DAO (Data Access Object): Menangani query SQL ke PostgreSQL menggunakan PreparedStatement.
+5. Model/Entity: Representasi data (Product, Transaction, User).
 
 ---
 
-## Kode Program
-(Tuliskan kode utama yang dibuat, contoh:  
+## UML Diagram
+A. Use Case Diagram
+(Aktor Admin mengelola produk dan laporan. Aktor Kasir mengelola transaksi dan pembayaran. Keduanya melakukan Login.)
 
-```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
-```
-)
+B. Class Diagram
+Sistem menggunakan Strategy Pattern untuk FR-3 (Payment):
+- Interface: PaymentStrategy
+- Concrete: CashPayment, EWalletPayment
+
+C. Sequence Diagram: Checkout Transaksi
+1. `CartController` memanggil `TransactionService.processCheckout()`.
+2. `TransactionService` melakukan validasi stok via `ProductDAO`.
+3. `TransactionService` menyimpan data via `TransactionDAO`.
+4. `ProductDAO` memperbarui stok produk di database.
 ---
 
-## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
-)
+## Test Plan & Test Case
+A. Unit Test (JUnit)
+Kami melakukan pengujian pada logika perhitungan total di CartService.
+- Method: calculateTotal()
+- Result: PASSED (Screenshot terlampir di folder /screenshots)
+
+B. Test Case Manual
+ID,Fitur,Langkah,Hasil yang Diharapkan,Status
+TC-01,Login,Input username admin/admin,Masuk ke dashboard Admin,Pass
+TC-02,CRUD,Tambah produk stok 0,Muncul pesan error validasi,Pass
+TC-03,Transaksi,"Klik ""Bayar"" tanpa item",Tombol disable atau muncul peringatan,Pass
+TC-04,Stok,Checkout 5 barang,Stok di database berkurang 5,Pass
 ---
 
-## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
+## Traceability Matrix
+Artefak,Referensi,Implementasi (Kelas/Metode),Bukti
+FR-1,Manajemen Produk,"ProductService.save(), ProductDAO.findAll()",Screenshot CRUD Produk
+FR-2,Transaksi,"CartService.addItem(), TransactionService",Screenshot Tabel Keranjang
+FR-3,Pembayaran,Interface PaymentStrategy (OCP),Pilihan Dropdown Tunai/E-Wallet
+FR-4,Struk,ReceiptGenerator.printText(),Output Console/UI Struk
+FR-5,Login/Role,"AuthService.authenticate(), SessionManager",Menu berbeda untuk Admin/Kasir
+OFR-2,Diskon (Opt),DiscountService.applyVoucher(),Total harga berkurang otomatis
 ---
 
-## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+## Pembagian Kerja
+Ditha Elita Putri (240202832)
+Peran: UI Designer & Frontend Developer.
+Kontribusi: Mengembangkan PosView.java (Layout Admin & Kasir), LoginView.java, dan integrasi event handler tombol.
 
+Fauzatul Farhanah (240202834)
+Peran: Backend Logic (Authentication).
+Kontribusi: Implementasi AuthService, JdbcUserDAO, dan keamanan login serta manajemen sesi user.
+
+Muhammad Nuur Fathan (240202840)
+Peran: Backend Logic (Transaction & Cart).
+Kontribusi: Membangun logika inti TransactionService, CartService, dan perhitungan total belanja.
+
+Diva Nur Azizah (240202859)
+Peran: Database Specialist & Product Management.
+Kontribusi: Implementasi CRUD pada JdbcProductDAO, ProductService, dan desain skema database PostgreSQL.
+
+Hanifah (240202864)
+Peran: Reporting & Testing Specialist.
+Kontribusi: Implementasi ReportService, Receipt (Struk), Strategy Pattern pada PaymentMethod, serta penyusunan Unit Testing.
 ---
 
-## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
+## Kendala & Solusi
+- Kendala: Database Connection Leak (koneksi tidak tertutup).
+Solusi: Menggunakan try-with-resources pada setiap statement JDBC.
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+- Kendala: Kesulitan sinkronisasi UI JavaFX saat data di DB berubah.
+Solusi: Menggunakan ObservableList untuk binding data dari DAO ke TableView.
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+- Kendala: Perubahan struktur class di tengah pengerjaan.
+Solusi: Refactoring menggunakan fitur IDE dan melakukan koordinasi via Git Pull Request.
