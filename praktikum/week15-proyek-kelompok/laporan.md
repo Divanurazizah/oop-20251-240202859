@@ -75,6 +75,7 @@ Diagram interaksi Aktor (Admin, Kasir) dengan fitur sistem.
 
 ### 2. Class Diagram
 Struktur kode dan relasi antar kelas (`Entity`, `Service`, `DAO`, `Controller`).
+![CLASSDIAGRAM](https://github.com/user-attachments/assets/bcf6ec3e-da5e-49a4-b32f-a0ea63cbac70)
 
 ### 3. Sequence Diagram
 **A. Alur Transaksi (Kasir)**
@@ -85,7 +86,8 @@ Struktur kode dan relasi antar kelas (`Entity`, `Service`, `DAO`, `Controller`).
 
 
 ### 4. Entity Relationship Diagram (ERD)
-![Screenshot hasil](screenshots/ERD.PNG)
+<img width="461" height="586" alt="ERD" src="https://github.com/user-attachments/assets/01c7a6d4-ca9c-4b38-a47c-4957e9d13c32" />
+
 
 ---
 
