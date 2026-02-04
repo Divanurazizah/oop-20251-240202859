@@ -71,18 +71,18 @@ Agar pengembangan tetap terfokus, proyek ini memiliki batasan sebagai berikut:
 
 ### 1. Use Case Diagram
 Diagram interaksi Aktor (Admin, Kasir) dengan fitur sistem.
-![Screenshot hasil](screenshots/USECASEDIAGRAM.jpg)
+![USECASEDIAGRAM](https://github.com/user-attachments/assets/2911b70d-3b9a-49d6-aeed-1f5275330ba2)
 
 ### 2. Class Diagram
 Struktur kode dan relasi antar kelas (`Entity`, `Service`, `DAO`, `Controller`).
-![Screenshot hasil](screenshots/CLASSDIAGRAM.JPG)
 
 ### 3. Sequence Diagram
 **A. Alur Transaksi (Kasir)**
-![Screenshot hasil](screenshots/SEQUENCE_KASIR.png)
+<img width="1534" height="701" alt="SEQUENCE_KASIR" src="https://github.com/user-attachments/assets/0a1ee095-c5fe-4846-bac7-3c2d9a71d04d" />
 
 **B. Alur Manajemen Produk (Admin)**
-![Screenshot hasil](screenshots/SEQUENCE_ADMIN.png)
+<img width="1023" height="1134" alt="SEQUENCE_ADMIN" src="https://github.com/user-attachments/assets/4aee47df-54bb-4d76-979d-041056a88a4c" />
+
 
 ### 4. Entity Relationship Diagram (ERD)
 ![Screenshot hasil](screenshots/ERD.PNG)
@@ -141,7 +141,10 @@ CREATE TABLE transaction_items (
 
 * **Hasil:**
 
-![Screenshot hasil](screenshots/TEST_AUTSERVICE.png)![Screenshot hasil](screenshots/TEST_CARTSERVICE.png)![Screenshot hasil](screenshots/TEST_PRODUCTSERVICE.png)![Screenshot hasil](screenshots/TEST_TRANSACTION.png)	
+<img width="1109" height="336" alt="TEST_AUTSERVICE" src="https://github.com/user-attachments/assets/bd2fcd3d-2081-4bdb-a8bc-9022fc7b8779" />
+<img width="1011" height="335" alt="TEST_CARTSERVICE" src="https://github.com/user-attachments/assets/88ff6813-63db-467b-8d02-850c2a83b815" />
+<img width="1072" height="325" alt="TEST_PRODUCTSERVICE" src="https://github.com/user-attachments/assets/198a6c0f-416d-4d82-8a45-fdb2f7fd5c55" />
+<img width="953" height="308" alt="TEST_TRANSACTION" src="https://github.com/user-attachments/assets/757f345b-bdc9-40db-8a6c-4ff9dd9ac45e" />
 
 ### 6.2 Manual Test Cases (Black Box)
 
@@ -197,18 +200,22 @@ CREATE TABLE transaction_items (
 
 ## 10. Lampiran
 
-* **Source Code:** https://github.com/Mhmmdfthn/oop-202501-240202840/tree/main/praktikum/week15-proyek-kelompok
+* **Source Code:** https://github.com/Divanurazizah/oop-20251-240202859/tree/main/praktikum/week15-proyek-kelompok
 * **File SQL:** `sql/database schema.sql`
 * **Desain Interface:** 
 
 1. **Login**
 ---
-![Screenshot hasil](screenshots/desain_interface/LOGIN.png)
+<img width="602" height="532" alt="LOGIN" src="https://github.com/user-attachments/assets/5f36a723-5d5d-4bd7-9c23-d1470e6553fe" />
+
 ---
-2. **Kasir**![Screenshot hasil](screenshots/desain_interface/KASIR.png)
+2. **Kasir**<img width="1152" height="732" alt="KASIR" src="https://github.com/user-attachments/assets/8fd2e012-033f-499a-86ce-fb1ff7a50443" />
+
 ---
-3. **Report Admin**![Screenshot hasil](screenshots/desain_interface/ADMIN_REPORT.png)
+3. **Report Admin**<img width="1152" height="732" alt="ADMIN_REPORT" src="https://github.com/user-attachments/assets/2a71b2cb-cdc5-4473-aede-d372d6734cbf" />
+
 ---
-4. **Manajemen Produk**![Screenshot hasil](screenshots/desain_interface/ADMIN_CRUD.png)
+4. **Manajemen Produk**<img width="1152" height="732" alt="ADMIN_CRUD" src="https://github.com/user-attachments/assets/26ffcae3-3669-48b7-91ba-de202143a36e" />
+
 ---
 * **Demo:** https://youtu.be/GWICs4Wg0VE
